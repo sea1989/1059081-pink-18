@@ -3,6 +3,7 @@
 * Студент: [Виктор](https://up.htmlacademy.ru/adaptive/18/user/1059081).
 * Наставник: [Михон Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
@@ -16,7 +17,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-### Памятка
+
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
