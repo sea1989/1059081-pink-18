@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор](https://up.htmlacademy.ru/adaptive/18/user/1059081).
-* Наставник: `Неизвестно`.
+* Наставник: [Михон Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
@@ -16,7 +16,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-### Памятка
+
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
