@@ -49,13 +49,127 @@
       <h2 class="begin__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
 
+
+
+
+
+    <section class="form">
+
+      <p class="form__info">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
+      <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__item">
+          <label for="form__family">Фамилия:</label>
+          <input id="form__family" type="text" name="family" value="" placeholder="Укажите фамилию *">
+        </p>
+        <p class="form__item">
+          <label for="form__name">Имя:</label>
+          <input id="form__name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+        </p>
+        <p class="form__item">
+          <label for="form__namepa">Отчество:</label>
+          <input id="form__namepa" type="text" name="namepa" value="" placeholder="Ну и отчество тоже">
+        </p>
+
+        <fieldset class="filter">
+          <legend>Ваши безбашенные
+            достижения в путешествии</legend>
+          <ul class="filter__crazy">
+            <li>
+              <input class="visually-hidden" type="checkbox" name="shark" checked id="shark">
+              <label for="shark">Сделал селфи с акулой</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="sun" checked id="sun">
+              <label for="sun">Обгорел на пляже</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="chak" id="chak">
+              <label for="chak">Видел Чака Норриса</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="buy" id="buy">
+              <label for="buy">Накупил сувениров</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="tower" checked id="tower">
+              <label for="tower">Удержал башню</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </li>
+
+          </ul>
+        </fieldset>
+
+
+        <p class="form__item">
+          <label for="form__phone">НОМЕР ТЕЛЕФОНА</label>
+          <input id="form__phone" type="text" name="phone" value="" placeholder="Номер, пожалуйста">
+        </p>
+        <p class="form__item">
+          <label for="form__post">АДРЕС ПОЧТЫ</label>
+          <input id="form__post" type="text" name="post" value="" placeholder="Введите почту *">
+        </p>
+
+
+
+        <fieldset class="filter">
+          <legend>
+            С КАКИМ ПРИЛОЖЕНИЕМ
+            ПУТЕШЕСТВОВАЛИ?
+          </legend>
+          <ul class="filter__system">
+            <li>
+              <input class="visually-hidden" type="checkbox" name="ios" checked id="ios">
+              <label for="ios">Pink для iOS</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="android" id="android">
+              <label for="android">Pink на Android</label>
+            </li>
+
+            <li>
+              <input class="visually-hidden" type="checkbox" name="win" id="win">
+              <label for="win">Windows Phone
+              </label>
+            </li>
+
+
+          </ul>
+        </fieldset>
+
+        <p class="form-back">
+            <label for="text">ОПИШИТЕ СВОИ ЭМОЦИИ</label><br>
+            <input class="form-back__text" id="text" type="text" name="text" value="" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </p>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+
+
+
+
+
+
+
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="#" width="147" height="40"
-          alt="лого пинк">
+        <img class="page-footer__logo-image" src="#" width="147" height="40" alt="лого пинк">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
