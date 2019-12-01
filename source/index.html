@@ -4,22 +4,58 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
+
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22"
-        alt="лого пинк">
-    </a>
 
+  
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
+      
       <div class="main-nav__wrapper">
+        
+          <ul class="main-nav__list site-list "></ul>
 
-        <ul class="main-nav__list site-list ">
+        </div>
+
+  
+    </nav>
+
+    <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22"
+          alt="лого пинк">
+      </a>
+  
+  </header>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+  
+        
           <li class="site-list__item site-list__item--active">
             <a>ГЛАВНАЯ</a>
           </li>
@@ -32,165 +68,150 @@
           <li class="site-list__item">
             <a href="#">HTML ACADEMY</a>
           </li>
-        </ul>
-
-      </div>
-
-    </nav>
-
-  </header>
+        
+  
+     
 
 
-  <main class="page-main">
+<main class="page-main">
 
-    <h1 class="visually-hidden">Приложение Пинк</h1>
+  <h1 class="visually-hidden">Приложение Пинк</h1>
 
-    <section class="begin">
-      <h2 class="begin__text">Взгляните на жизнь иначе!</h2>
-    </section>
-
-
-    <section class="download">
-
-      <a class="download__button" href="#">Скачать приложение</a>
+  <section class="begin">
+    <h2 class="begin__text">Взгляните на жизнь иначе!</h2>
+  </section>
 
 
-      <ul class="download__list">
-        <li class="download__item">
-          <a class="download__link download__link--apple" href="#">apple</a>
+  <section class="download">
+
+    <a class="download__button" href="#">Скачать приложение</a>
+
+
+    <ul class="download__list">
+      <li class="download__item">
+        <a class="download__link download__link--apple" href="#">apple</a>
+      </li>
+      <li class="download__item">
+        <a class="download__link download__link--android" href="#">android</a>
+      </li>
+      <li class="download__item">
+        <a class="download__link download__link--microsoft" href="#">microsoft</a>
+      </li>
+    </ul>
+    <p class="download__text">Доступно для iPhone, iPad, Android,<br>
+      Windows Phone, OS X, Windows 8</p>
+  </section>
+
+
+  <section class="advantages">
+    <div class="advantages__wrapper slider">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+
+      <p class="advantages__text">Устали от серости мегаполиса?</p>
+      <p class="advantages__text">Нам есть, что вам предложить!</p>
+
+
+      <ul class="advantages__list slider__list">
+
+        <li class="advantages__item advantages__item--fast slider__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+
+          <p class="advantages__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
-        <li class="download__item">
-          <a class="download__link download__link--android" href="#">android</a>
+
+        <li class="advantages__item advantages__item--cool slider__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+
+          <p class="advantages__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+
         </li>
-        <li class="download__item">
-          <a class="download__link download__link--microsoft" href="#">microsoft</a>
+        <li class="advantages__item advantages__item--price slider__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
         </li>
       </ul>
-      <p class="download__text">Доступно для iPhone, iPad, Android,<br>
-        Windows Phone, OS X, Windows 8</p>
-    </section>
+    </div>
+  </section>
 
 
-    <section class="advantages">
-      <div class="advantages__wrapper slider">
-        <h2 class="visually-hidden">Наши преимущества</h2>
+  <section class="comments">
+    <div class="comments__wrapper slider">
+      <h2 class="visually-hidden">Комментарии</h2>
 
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
+      <ul class="comments__list">
 
+        <li class="comments__item">
+          <h3 class="comments__title">Поднимает настроение</h3>
 
-        <ul class="advantages__list slider__list">
-
-          <li class="advantages__item advantages__item--fast slider__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-
-            <p class="advantages__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-
-          <li class="advantages__item advantages__item--cool slider__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-
-            <p class="advantages__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-
-          </li>
-          <li class="advantages__item advantages__item--price slider__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <p class="comments__description">
+            «Это приложение перевернуло мой мир<br>
+            и позволило по-новому взглянуть на <br>
+            привычные серые вещи! А еще я <br>
+            познакомился со своей будущей женой <br>
+            в комментариях к выложенной <br>
+            фотографии!»</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 
-    <section class="comments">
-      <div class="comments__wrapper slider">
-        <h2 class="visually-hidden">Комментарии</h2>
+  <section class="tariff">
+    <div class="tariff__wrapper slider">
+      <h2 class="visually-hidden">Тарифы</h2>
 
-        <ul class="comments__list">
+      <ul class="tariff__list">
 
-          <li class="comments__item">
-            <h3 class="comments__title">Поднимает настроение</h3>
+        <li class="tariff__item">
+          <h3 class="tariff__title">Стандарт</h3>
 
-            <p class="comments__description">
-              «Это приложение перевернуло мой мир
-              и позволило по-новому взглянуть на 
-              привычные серые вещи! А еще я 
-              познакомился со своей будущей женой 
-              в комментариях к выложенной 
-              фотографии!»</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <p class="tariff__price">3,99 USD</p>
+          <div class="tariff__block">
+            <p class="tariff__block__filter">Розовый фильтр</p>
+            <p class="tariff__block__smile">Смайлики</p>
+            <p class="tariff__block__comments">Комментарии</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="contacs">
 
-    <section class="tariff">
-      <div class="tariff__wrapper slider">
-        <h2 class="visually-hidden">Тарифы</h2>
+    <h2 class="visually-hidden">Контакты</h2>
 
-        <ul class="tariff__list">
+    <p class="contacs__block__filter">Остались вопросы?
+      Свяжитесь с нами!</p>
 
-          <li class="tariff__item">
-            <h3 class="tariff__title">Стандарт</h3>
+    <ul class="contacs__list">
 
-            <p class="tariff__price">
-             3,99 USD</p>
-             <div class="tariff__block">
-<p class="tariff__block__filter">Розовый фильтр</p>
-<p class="tariff__block__smile">Смайлики</p>
-<p class="tariff__block__comments">Комментарии</p>
-             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <li class="contacs__item">
+        <h3 class="contacs__title">Звоните:</h3>
 
-    <section class="contacs">
-      
-        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacs__title2">
+          +7 (812) 555-66-66</p>
+      </li>
 
-        <p class="contacs__block__filter">Остались вопросы?
-          Свяжитесь с нами!</p>
+      <li class="contacs__item">
+        <h3 class="contacs__title">Пишите:</h3>
 
-        <ul class="contacs__list">
+        <p class="contacs__title2">
+          mail@htmlacademy.ru</p>
+      </li>
 
-          <li class="contacs__item">
-            <h3 class="contacs__title">Звоните:</h3>
+      <li class="contacs__item">
+        <h3 class="contacs__title">Приезжайте в гости:</h3>
 
-            <p class="contacs__title2">
-              +7 (812) 555-66-66</p>
-          </li>
-
-          <li class="contacs__item">
-            <h3 class="contacs__title">Пишите:</h3>
-
-            <p class="contacs__title2">
-              mail@htmlacademy.ru</p>
-          </li>
-
-          <li class="contacs__item">
-            <h3 class="contacs__title">Приезжайте в гости:</h3>
-
-            <p class="contacs__title2">
-              ул. Большая
-              Конюшенная, 19/8</p>
-          </li>
-
-
-        </ul>
-     
-    </section>
-
-  </main>
-</body>
-
-</html>
-
-
-
-
+        <p class="contacs__title2">
+          ул. Большая
+          Конюшенная, 19/8</p>
+      </li>
+    </ul>
+  </section>
+</main>
+-->
