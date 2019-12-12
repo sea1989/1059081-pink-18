@@ -1,6 +1,8 @@
 .main-nav {
   width : 320px;
   margin: 0 auto;
+    /* Временно для сетки */
+    outline   : 5px solid blue;
 }
 
 .main-nav__list {
@@ -8,20 +10,17 @@
   padding   : 0;
   list-style: none;
   /* Временно для сетки */
-  min-height: 50px;
-  outline   : 1px solid rgb(53, 175, 94);
+  min-height: 325px;
+  
 }
 
-.site-list {
-  /* Временно для сетки */
-  min-height: 255px;
-  outline   : 1px solid rgb(199, 188, 31);
-}
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width : 660px;
     margin: 0 auto;
+      /* Временно для сетки */
+     
   }
 
   .main-nav__list {
@@ -29,22 +28,17 @@
     padding   : 0;
     list-style: none;
     /* Временно для сетки */
-    min-height: 110px;
-    outline   : 1px solid rgb(53, 175, 94);
+    min-height: 366px;
+  
   }
 
-  .site-list {
-    /* Временно для сетки */
-    min-height: 365px;
-    outline   : 1px solid rgb(199, 188, 31);
-  }
 }
 
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width : auto;
-    margin: 0;
+    width : 1200px;
+    margin: 0 auto;
   }
 
   .main-nav__wrapper {
@@ -54,11 +48,14 @@
     margin         : 0 auto;
   }
 
-
-  .site-list {
-    width: 1200px;
-
+  .main-nav__list {
+    margin    : 0;
+    padding   : 0;
+    list-style: none;
     /* Временно для сетки */
     min-height: 110px;
+  
   }
+
+
 }

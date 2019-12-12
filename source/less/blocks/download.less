@@ -1,0 +1,150 @@
+.download {
+    width         : 320px;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+
+    /* Временно для сетки */
+    min-height: 665px;
+    outline   : 5px solid red;
+}
+
+.download__text {
+    padding-top  : 28px;
+    padding-right: 49px;
+    padding-left : 50px;
+    margin       : 0 auto;
+    color        : #ffffff;
+
+    /* Временно для сетки */
+    min-height: 368px;
+    outline   : 5px solid greenyellow;
+}
+
+.download__button {
+    width         : 281px;
+    padding-top   : 10px;
+    padding-bottom: 10px;
+    margin-top    : 30px;
+    margin-left   : 18px;
+
+    /* Временно для сетки */
+    outline: 6px solid green;
+}
+
+.download__list {
+
+    margin : 0 auto;
+    display: flex;
+
+    margin-top : 30px;
+    margin-left: 18px;
+    list-style : none;
+
+    /* Временно для сетки */
+    width     : 251px;
+    min-height: 65px;
+    outline   : 5px solid orangered;
+}
+
+
+.download__text--bottom {
+
+    padding-right: 46px;
+    margin-left  : 18px;
+    color        : #ffffff;
+
+    font-size     : 14px;
+    font-weight   : 300;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.71;
+    letter-spacing: normal;
+    text-align    : center;
+
+
+    /* Временно для сетки */
+    width     : 251px;
+    outline   : 2px solid greenyellow;
+
+}
+
+@media (min-width: @tablet-width) {
+    .download {
+        width : 660px;
+        margin: 0 auto;
+
+        /* Временно для сетки */
+        min-height: 618px;
+    }
+
+    .download__text {
+        padding-top  : 103px;
+        padding-right: 396px;
+        padding-left : 78px;
+        margin       : 0 auto;
+
+        /* Временно для сетки */
+        min-height: 164px;
+    }
+
+    .download__button {
+        width         : 281px;
+        padding-top   : 10px;
+        padding-bottom: 10px;
+        margin-top    : 0px;
+        margin-left   : 18px;
+
+    }
+
+    .download__text--bottom {
+
+      
+        margin-top  : 50px;
+
+    
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+    .download {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 742px;
+    }
+
+    .download__text {
+        padding-top  : 121px;
+        padding-right: 799px;
+        padding-left : 166px;
+        margin       : 0 auto;
+
+        /* Временно для сетки */
+        min-height: 219px;
+    }
+
+    .download__button {
+        width         : 281px;
+        padding-top   : 10px;
+        padding-bottom: 10px;
+        margin-top    : 0px;
+        margin-left   : 130px;
+
+    }
+
+    .download__list {
+        margin-top : 75px;
+        margin-left: 130px;
+    }
+
+    .download__text--bottom {
+
+      
+        margin-left  : 130px;
+
+    
+    }
+
+}
