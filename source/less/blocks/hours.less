@@ -1,0 +1,25 @@
+.hours {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .hours {
+        display: flex;
+        flex-direction: column;
+        width : 660px;
+        margin: 0 auto;
+
+        /* Временно для сетки */
+        min-height: 350px;
+        outline   : 5px solid blue;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .hours {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 429px;
+    }
+}

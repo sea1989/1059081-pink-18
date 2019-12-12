@@ -1,0 +1,92 @@
+.advantages {
+    width         : 320px;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    /* Временно для сетки */
+    min-height: 1002px;
+    outline   : 5px solid red;
+}
+
+@media (min-width: @tablet-width) {
+    .advantages {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 725px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .advantages {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 932px;
+    }
+}
+
+.advantages__text {
+    width      : 320px;
+    margin     : 0;
+    padding-top: 46px;
+    /* Временно для сетки */
+    min-height: 80px;
+    outline   : 2px solid blueviolet;
+}
+
+@media (min-width: @tablet-width) {
+    .advantages__text {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 55px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .advantages__text {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 100px;
+    }
+}
+
+.advantages__list {
+    display       : flex;
+    flex-direction: column;
+    margin        : 0px;
+    padding       : 0px;
+}
+
+@media (min-width: @desktop-width) {
+    .advantages__list {
+        display       : flex;
+        flex-direction: row;
+    }
+}
+
+.advantages__item {
+    width     : 320px;
+    margin    : 0;
+    list-style: none;
+    /* Временно для сетки */
+    min-height: 100px;
+    outline   : 3px solid brown;
+}
+
+@media (min-width: @tablet-width) {
+    .advantages__item {
+        width      : 320px;
+        margin-left: 330px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .advantages__item {
+        margin-left : 90px;
+        margin-right: 90px;
+        margin-top  : 380px;
+    }
+}
