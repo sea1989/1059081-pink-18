@@ -1,0 +1,31 @@
+.page-footer {
+  display : none;
+  margin: 0 auto;
+  
+      /* Временно для сетки */
+ outline   : 5px solid rgb(25, 190, 89);     
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+display: flex;
+      width : 660px;
+      margin: 0 auto;
+
+      /* Временно для сетки */
+      min-height: 120px;
+     
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: flex;
+          width : 1200px;
+          margin: 0 auto;
+    
+          /* Временно для сетки */
+          min-height: 170px;
+         
+      }
+}

@@ -1,0 +1,30 @@
+.contacs {
+    width         : 320px;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    /* Временно для сетки */
+    min-height: 355px;
+    outline   : 3px solid orangered;
+}
+
+.contacs__list {
+    list-style: none;
+}
+@media (min-width: @tablet-width) {
+    .contacs {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 351px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .contacs {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 434px;
+    }
+}

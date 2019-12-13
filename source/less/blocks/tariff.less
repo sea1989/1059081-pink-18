@@ -1,0 +1,27 @@
+.tariff {
+    width         : 320px;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    /* Временно для сетки */
+    min-height: 456px;
+    outline   : 3px solid blueviolet;
+}
+
+@media (min-width: @tablet-width) {
+    .tariff {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 400px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .tariff {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 634px;
+    }
+}

@@ -1,0 +1,28 @@
+.map {
+    width : 320px;
+    margin: 0 auto;
+    outline   : 5px solid blue;
+        /* Временно для сетки */
+        min-height: 155px;
+}
+
+@media (min-width: @tablet-width) {
+    .map {
+
+        width : 660px;
+        margin: 0 auto;
+
+        /* Временно для сетки */
+        min-height: 320px;
+       
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .map {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 420px;
+    }
+}
