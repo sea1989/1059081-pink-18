@@ -4,26 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-white-mobile-svg.svg" width="75" height="22"
-        alt="лого пинк">
-    </a>
-
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
       <div class="main-nav__wrapper">
-
         <ul class="main-nav__list site-list ">
-          <li class="site-list__item site-list__item--active">
-            <a>ГЛАВНАЯ</a>
+          
+          <li class="site-list__item ">
+            <a href="index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="photo.html">ФОТОГРАФИИ</a>
           </li>
           <li class="site-list__item">
@@ -46,7 +42,7 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
 
     <section class="begin">
-      <h2 class="begin__text">Фотографии пользователей</h2>
+      <h2 class="begin__text">Фотографии<br> пользователей</h2>
     </section>
 
 
@@ -60,17 +56,14 @@
           Видите, как не хватает ваших?
         </p>
 
-
-
-        <ul class="blog__list">
-
-          <li class="blog__item">
-            <h3 class="blog__name">Анна (5 минут назад)</h3>
+        <div class="blog__img"></div>
+        <h3 class="blog__name">Анна (5 минут назад)</h3>
 
             <p class="blog__comment">
               Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
               свои вопросы!</p>
-          </li>
+
+        <ul class="blog__list">
 
           <li class="blog__item">
             <h3 class="blog__name">Левон (5 часов назад)</h3>

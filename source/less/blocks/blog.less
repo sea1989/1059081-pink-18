@@ -1,0 +1,117 @@
+.blog {
+    width : 320px;
+    margin: 0 auto;
+    /* Временно для сетки */
+    min-height: 2650px;
+    outline   : 5px solid rgb(9, 255, 1);
+}
+
+.blog__text {
+
+
+
+    font-size     : 14px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 2.14;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : var(--dark);
+
+    margin : 0px;
+    padding: 30px;
+    /* Временно для сетки */
+    min-height: 120px;
+    outline   : 5px solid red;
+}
+
+.blog__img {
+    background-image: url("../img/panorama-mobile@1x.jpg");
+    width           : 320px;
+    height          : 137px;
+}
+
+.blog__list {
+    width     : 320px;
+    margin    : 0 auto;
+    padding   : 0px;
+    display   : flex;
+    list-style: none;
+    flex-wrap : wrap;
+}
+
+.blog__item {
+    width      : 280px;
+    margin-left: 20px;
+    margin-top : 20px;
+    /* Временно для сетки */
+    min-height: 310px;
+    outline   : 2px solid orange;
+}
+
+@media (min-width: @tablet-width) {
+    .blog {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 2500px;
+    }
+
+    .blog__text {
+        font-size: 18px;
+        padding  : 75px;
+        /* Временно для сетки */
+        min-height: 80px;
+    }
+
+    .blog__img {
+        background-image: url("../img/panorama-tablet@1x.jpg");
+        width           : 660px;
+        height          : 509px;
+    }
+
+    .blog__list {
+        width: 660px;
+    }
+
+    .blog__item {
+        width: 300px;
+        /* Временно для сетки */
+        min-height: 455px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .blog {
+        width : 1200px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 2200px;
+    }
+
+    .blog__text {
+        font-size    : 18px;
+        padding-top  : 90px;
+        padding-left : 316px;
+        padding-right: 316px;
+    }
+
+    .blog__img {
+        background-image: url("../img/panorama-desktop@1x.jpg");
+        width           : 1200px;
+        height          : 506px;
+    }
+
+    .blog__list {
+        width: 1200px;
+        padding-left: 110px;
+    }
+
+    .blog__item {
+        width: 300px;
+        /* Временно для сетки */
+        min-height: 555px;
+    }
+
+}
