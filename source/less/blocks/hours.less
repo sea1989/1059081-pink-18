@@ -1,23 +1,36 @@
 .hours {
     display: none;
+
+
 }
 
 @media (min-width: @tablet-width) {
     .hours {
+        position: relative;
         display: flex;
         flex-direction: column;
         width : 660px;
         margin: 0 auto;
-
+        background-color: #ffffff;
         /* Временно для сетки */
         min-height: 350px;
         outline   : 5px solid blue;
+    }
+    .hours::before{
+        content: "";
+        position: absolute;
+        left: 0px;
+    top: 10px;
+    width: 290px;
+    height: 290px;
+    background-image: url("../img/timer-svg.svg");
+ 
     }
 }
 
 @media (min-width: @desktop-width) {
     .hours {
-        width : 1200px;
+        width : 960px;
         margin: 0 auto;
         /* Временно для сетки */
         min-height: 429px;

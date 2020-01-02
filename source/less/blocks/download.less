@@ -3,36 +3,65 @@
     margin        : 0 auto;
     display       : flex;
     flex-direction: column;
+
     /* Временно для сетки */
     min-height: 665px;
     outline   : 5px solid red;
 }
 
 .download__text {
+    display: flex;
+    position: relative;
     padding-top  : 28px;
     padding-right: 49px;
     padding-left : 50px;
     margin       : 0 auto;
     color        : #ffffff;
+
+        font-size: 24px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+
     /* Временно для сетки */
     min-height: 368px;
-    outline   : 5px solid greenyellow;
+    outline   : 5px solid rgb(255, 47, 245);
 }
+
+.download__text::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    width: 258px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  
+  }
+
 .download__button {
     width         : 281px;
     padding-top   : 10px;
     padding-bottom: 10px;
     margin-top    : 30px;
     margin-left   : 18px;
-    /* Временно для сетки */
-    outline: 6px solid green;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
 }
 .download__list {
     margin : 0 auto;
     display: flex;
     margin-top : 30px;
     margin-left: 18px;
+
     list-style : none;
+    justify-content: space-between;
+    align-items: center;
     /* Временно для сетки */
     width     : 251px;
     min-height: 65px;
@@ -66,9 +95,24 @@
         padding-right: 396px;
         padding-left : 78px;
         margin       : 0 auto;
+        font-size: 40px;
         /* Временно для сетки */
         min-height: 164px;
     }
+
+    .download__text::after {
+        content: "";
+        position: absolute;
+        left: -17px;
+        top: 70px;
+        width: 700px;
+        height: 545px;
+        background-image: url("../img/iphone-hand-tablet@1x.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      
+      }
+
     .download__button {
         width         : 281px;
         padding-top   : 10px;
@@ -83,19 +127,34 @@
 
 @media (min-width: @desktop-width) {
     .download {
-        width : 1200px;
+        width : 960px;
         margin: 0 auto;
         /* Временно для сетки */
         min-height: 742px;
     }
     .download__text {
-        padding-top  : 121px;
-        padding-right: 799px;
-        padding-left : 166px;
-        margin       : 0 auto;
+        padding-top  : 100px;
+        padding-left : 25px;
+        padding-right: 690px;
+      
+        font-size: 50px;
         /* Временно для сетки */
         min-height: 219px;
     }
+
+    .download__text::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 95px;
+        width: 1050px;
+        height: 645px;
+        background-image: url("../img/iphone-hand-desktop@1x.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      
+      }
+
     .download__button {
         width         : 281px;
         padding-top   : 10px;
@@ -107,7 +166,7 @@
         margin-top : 75px;
         margin-left: 130px;
     }
-    .download__text--bottom {
+    .download__text2 {
         margin-left: 130px;
     }
 }

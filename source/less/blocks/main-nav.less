@@ -1,6 +1,9 @@
 .main-nav {
   width : 320px;
   margin: 0 auto;
+
+
+  
     /* Временно для сетки */
     outline   : 5px solid blue;
 }
@@ -13,7 +16,17 @@
   min-height: 325px;
   
 }
-
+.main-nav__item a{
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -37,14 +50,14 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width : 1200px;
+    width : 960px;
     margin: 0 auto;
   }
 
   .main-nav__wrapper {
     display        : flex;
     justify-content: space-between;
-    width          : 1200px;
+    width          : 960px;
     margin         : 0 auto;
   }
 

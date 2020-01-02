@@ -5,7 +5,12 @@
   
       /* Временно для сетки */
  outline   : 5px solid rgb(25, 190, 89);     
- height: 320px;
+
+}
+
+.page-footer__wrapper {
+  outline   : 5px solid rgb(155, 231, 56);     
+
 }
 
 @media (min-width: @tablet-width) {
@@ -23,10 +28,18 @@ display: flex;
 @media (min-width: @desktop-width) {
   .page-footer {
     display: flex;
-          width : 1200px;
+          width : 960px;
           margin: 0 auto;
     
           /* Временно для сетки */
           min-height: 170px;
       }
+
+.page-footer__wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 960px;
+  justify-content: space-between;
+}
+
 }
