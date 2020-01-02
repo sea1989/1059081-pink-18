@@ -1,48 +1,125 @@
 .tariff {
     width         : 320px;
     margin        : 0 auto;
-    display       : block;
- 
-    background-color: #f2f2f2;
+    overflow: hidden;
     /* Временно для сетки */
-    min-height: 456px;
-    outline   : 3px solid blueviolet;
-}
-.tariff__field {
-    color: #ffffff;
-    background-color: #283645;
-    width: 233px;
-    height: 94px;
-}
-.tariff__cell {
-    color: #283645;
-    background-color: #ffffff;
-width: 320;
-}
-.tariff__wrapper {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: none;
 
+
+}
+
+.tariff__list {
+    position: relative;
+    left: -525px;
+    width: 1104px;  
+    background-color: #f2f2f2;
+}
+.tariff__title {
+    color: #ffffff;
+    font-size: 16px;
+    background-color:@bg-grey;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tariff__price {
+    color: #ffffff;
+    font-size: 16px;
+    background-color:@bg-grey;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tariff__field {
+    background-color:@bg-grey;
+    width: 276px;
+    height: 94px;  
+}
+
+.tariff__cell {
+    background-color: #ffffff;
+    width: 276px;
+    height: 59px;
+}
+
+.tariff__cell--filter {
+    font-size: 14px;
+    padding-right: 75px;
+    
+}
+.tariff__cell--smile {
+    font-size: 14px;
+    padding-right: 126px;
+    
+}
+.tariff__cell--comments {
+    font-size: 14px;
+    padding-right: 100px;
+    
 }
 
 
 @media (min-width: @tablet-width) {
-    .tariff {
-        width : 660px;
-        margin: 0 auto;
-        /* Временно для сетки */
-        min-height: 400px;
+.tariff {
+        width         : 660px;
+        margin        : 0 auto;
+        background-color: #f2f2f2;
+       }
+
+.tariff__list {
+        position: static;
+      width: 616px;
+      margin        : 0 auto;
+        background-color: #f2f2f2;
+    }
+
+    .tariff__field {
+        background-color:@bg-grey;
+        width: 153px;
+        height: 75px;  
+    }
+    
+    .tariff__cell {
+        background-color: #ffffff;
+        width: 153px;
+        height: 45px;
+        font-size: 14px;
+        
+    }
+   
+.tariff__cell span{
+display: none;
     }
 }
 
 @media (min-width: @desktop-width) {
     .tariff {
-        width : 960px;
-        margin: 0 auto;
-        /* Временно для сетки */
-        min-height: 500px;
+            width         : auto;
+            margin        : 0 auto;
+            background-color: #f2f2f2;
+           }
+    
+    .tariff__list {
+            position: static;
+          width: 940px;
+          margin        : 0 auto;
+            background-color: #f2f2f2;
+        }
+    
+        .tariff__field {
+            background-color:@bg-grey;
+            width: 233px;
+            height: 94px;  
+        }
+        
+        .tariff__cell {
+            background-color: #ffffff;
+            width: 233px;
+            height: 59px;
+            font-size: 14px;
+            
+        }
+       
+    .tariff__cell span{
+    display: none;
+        }
     }
-}
