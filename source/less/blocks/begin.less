@@ -1,0 +1,44 @@
+.begin {
+    width : 320px;
+    margin: 0 auto;
+    /* Временно для сетки */
+    min-height: 170px;
+    outline   : 5px solid rgb(245, 114, 8);
+}
+
+.begin__text {
+
+    font-size     : 24px;
+    font-weight   : 300;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : normal;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : #ffffff;
+    margin        : 0px;
+    padding-top   : 30px;
+}
+
+@media (min-width: @tablet-width) {
+    .begin {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 325px;
+    }
+
+    .begin__text {
+        font-size  : 50px;
+        padding-top: 75px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .begin {
+        width : 960px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 280px;
+    }
+}

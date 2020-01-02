@@ -1,0 +1,135 @@
+.form {
+    display       : flex;
+    flex-direction: column;
+    width         : 320px;
+    margin        : 0 auto;
+    /* Временно для сетки */
+    min-height: 2200px;
+    outline   : 5px solid rgb(9, 255, 1);
+}
+
+.form__info {
+    font-size     : 14px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 2.14;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : var(--dark);
+
+    margin : 0px;
+    padding: 30px;
+    /* Временно для сетки */
+    min-height: 100px;
+    outline   : 5px solid red;
+
+}
+
+.form__form {
+    display       : flex;
+    flex-direction: column;
+}
+
+.form__item {
+    margin: 0px;
+    /* Временно для сетки */
+    min-height: 120px;
+    outline   : 5px solid blue;
+}
+
+.filter1 {
+    width  : 320px;
+    margin : 0 auto;
+    padding: 0px;
+    /* Временно для сетки */
+    min-height: 620px;
+    outline   : 5px solid rgb(105, 20, 145);
+
+}
+
+.filter2 {
+    width  : 320px;
+    margin : 0 auto;
+    padding: 0px;
+    /* Временно для сетки */
+    min-height: 390px;
+    outline   : 5px solid rgb(105, 20, 145);
+}
+
+@media (min-width: @tablet-width) {
+    .form {
+        width : 660px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 2400px;
+    }
+
+    .form__info {
+        font-size: 18px;
+        padding  : 75px;
+        /* Временно для сетки */
+        min-height: 80px;
+    }
+
+    .filter1 {
+        width: 660px;
+        order: 3;
+    }
+
+    .filter2 {
+        width: 660px;
+        order: 1;
+    }
+
+
+    .form__item-phone,
+    .form__item-post {
+        order: 2;
+    }
+
+    .form-back {
+        order  : 4;
+        outline: 6px solid rgb(214, 105, 16);
+    }
+    .button {
+        order: 5;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .form {
+        width : 960px;
+        margin: 0 auto;
+        /* Временно для сетки */
+        min-height: 1450px;
+    }
+
+    .form__info {
+        font-size    : 18px;
+        padding-top  : 90px;
+        padding-left : 200px;
+        padding-right: 200px;
+    }
+
+.form__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .form__item {
+        width: 470px;
+    }
+
+    .filter2 {
+        width: 470px;
+    }
+.filter1{
+    width: 960px;
+    min-height: 300px;
+}
+.form-back {
+    width: 960px;
+    min-height: 300px;
+}
+}

@@ -1,13 +1,13 @@
 .page-header {
   display       : flex;
   flex-direction: column;
-  outline       : 1px solid rgb(53, 175, 94);
+  outline       : 5px solid red;
 }
 
 .page-header__logo {
-  height : 22px;
-  outline: 2px solid rgb(165, 70, 184);
+  height: 22px;
 }
+
 
 
 @media (min-width: @tablet-width) {
@@ -16,11 +16,15 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .page-header__logo {
     height: 40px;
   }
+
+  .main-nav__list {
+    display: flex;
+  }
+
 }
 
 .page-header,

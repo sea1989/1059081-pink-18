@@ -1,13 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
 body {
-  background: @bg-darkgrey url("../img/pink-index-mobile.jpg") no-repeat 50% 0;
+  background: @bg-grey url("../img/pink--mobile.jpg") no-repeat 50% 0;
   background-size: 320px auto;
-  min-height: 1750px;
+  min-height: 4300px;
 }
 
 
 @media (min-width: @tablet-width) {
   body {
-    background: @bg-darkgrey url("../img/pink-index-tablet.jpg") no-repeat 50% 0;
+    background: @bg-grey url("../img/pink--tablet.jpg") no-repeat 50% 0;
     background-size: 660px auto;
   }
 }
@@ -15,23 +24,7 @@ body {
 
 @media (min-width: @desktop-width) {
   body {
-    background: @bg-darkgrey url("../img/pink-index-desktop.jpg") no-repeat 50% 0;
+    background: @bg-grey url("../img/pink--desktop.jpg") no-repeat 50% 0;
     background-size: 1200px auto;
   }
 }
-
-
-.main-nav {
-  /* Временно для сетки */
-  min-height: 310px;
-  outline: 3px solid red;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav {
-    /* Временно для сетки */
-    min-height: 110px;
-  }
-}
-
-
