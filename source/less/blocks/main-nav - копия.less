@@ -1,57 +1,74 @@
 .main-nav {
   position: relative;
-  width     : 320px;
+
+  width: 320px;
   min-height: 51px;
-  margin    : 0 auto;
+  margin: 0 auto;
+
+  background-color: @bg-grey;
+
+  
+    /* Временно для сетки */
+    outline   : 5px solid blue;
 }
+
 
 .main-nav__toggle {
   position: absolute;
-  top     : 0;
-  right   : 0;
-  z-index : 2;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
   display: block;
-  width  : 70px;
-  height : 50px;
+  width: 70px;
+  height: 50px;
 
   background-color: #191d46;
+
   cursor: pointer;
   border: none;
+
   &:hover,
   &:active {
     background-color: #1d1d1c;
   }
 }
 
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
+
   position: absolute;
-  top     : 15px;
-  left    : 17px;
-  width : 36px;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
   height: 2px;
+
   background-color: #ffffff;
-  box-shadow      : 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow      : 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
+
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
+  right: auto;
+  left: 0;
 
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top     : 24px;
-    left    : 18px;
+    top: 24px;
+    left: 18px;
 
-    width : 36px;
+    width: 36px;
     height: 2px;
 
     background-color: #ffffff;
@@ -75,43 +92,33 @@
   margin    : 0;
   padding   : 0;
   list-style: none;
+  /* Временно для сетки */
+  min-height: 50px;
 }
 
-.main-nav__item a {
-  font-family   : OpenSans;
-  font-size     : 18px;
-  font-weight   : bold;
-  font-stretch  : normal;
-  font-style    : normal;
-  line-height   : 1.78;
+.site-list {
+  /* Временно для сетки */
+  min-height: 300px;
+}
+
+.main-nav__item a{
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
   letter-spacing: normal;
-  text-align    : center;
-  color         : #ffffff;
-}
-
-@media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__wrapper {
-    position  : static;
-    min-height: 0;
-  }
-
-  .main-nav--nojs .site-list__item {
-    display: block;
-  }
+  text-align: center;
+  color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width : 660px;
     margin: 0 auto;
+      /* Временно для сетки */
+     
   }
 
   .main-nav__list {
@@ -119,9 +126,12 @@
     padding   : 0;
     list-style: none;
     /* Временно для сетки */
-    min-height: 110px;
+    min-height: 366px;
+  
   }
+
 }
+
 
 @media (min-width: @desktop-width) {
   .main-nav {
@@ -137,9 +147,12 @@
   }
 
   .main-nav__list {
-
+    margin    : 0;
+    padding   : 0;
     list-style: none;
-
+    /* Временно для сетки */
+    min-height: 110px;
+  
   }
 
 

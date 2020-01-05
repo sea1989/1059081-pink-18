@@ -1,38 +1,151 @@
 .hours {
     display: none;
-
-
 }
 
 @media (min-width: @tablet-width) {
     .hours {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width : 660px;
-        margin: 0 auto;
+        display         : block;
+        margin          : 0 auto;
         background-color: #ffffff;
-        /* Временно для сетки */
-        min-height: 350px;
-        outline   : 5px solid blue;
-    }
-    .hours::before{
-        content: "";
-        position: absolute;
-        left: 0px;
-    top: 10px;
-    width: 290px;
-    height: 290px;
-    background-image: url("../img/timer-svg.svg");
- 
+        padding-top     : 50px;
     }
 }
 
 @media (min-width: @desktop-width) {
     .hours {
-        width : 960px;
-        margin: 0 auto;
-        /* Временно для сетки */
-        min-height: 429px;
+        background-color: #f2f2f2;
+        margin          : 0 auto;
+        padding-top     : 15px;
+    }
+}
+
+.hours__research-inner {
+    width        : 660px;
+    padding-left : 20px;
+    padding-right: 20px;
+    margin       : 0 auto;
+    display      : flex;
+
+
+    @media (min-width: @desktop-width) {
+        width           : 960px;
+        background-color: #f2f2f2;
+        padding-top     : 0px;
+    }
+
+}
+
+.hours__timer {
+    position    : relative;
+    margin-left : 1px;
+    margin-right: 71px;
+    width       : 238px;
+    height      : 276px;
+    flex-shrink : 0;
+
+    &::before {
+        content       : "24";
+        position      : absolute;
+        display       : inline-block;
+        vertical-align: top;
+        top           : 78px;
+        left          : 50%;
+        font-size     : 96px;
+        font-weight   : 700;
+        line-height   : 149.47px;
+        transform     : translateX(-50%);
+        color         : pink;
+    }
+
+    @media (min-width: @desktop-width) {
+        width       : 298px;
+        height      : 345px;
+        margin-right: 67px;
+
+        &::before {
+            top        : 95px;
+            font-size  : 120px;
+            line-height: 186.84px;
+        }
+    }
+}
+
+.hours__timer-icon {
+    width : 238px;
+    height: 276px;
+
+    @media (min-width: @desktop-width) {
+        width : 298px;
+        height: 345px;
+    }
+}
+
+.hours__research-lead {
+    position      : relative;
+    padding-top   : 40px;
+    padding-bottom: 23px;
+
+    @media (min-width: @desktop-width) {
+        padding-top   : 91px;
+        padding-left  : 0;
+        padding-right : 40px;
+        padding-bottom: 115px;
+        font-size     : 18px;
+        line-height   : 30px;
+    }
+}
+
+.hours__research-title {
+    margin-top   : 0;
+    margin-bottom: 9px;
+    font-size    : 30px;
+    font-weight  : bold;
+    line-height  : 1.2;
+    color        : #000000;
+    text-align   : left;
+
+    @media (min-width: @tablet-width) {
+        max-width: 175px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 20px;
+        max-width    : inherit;
+    }
+}
+
+.hours__research-text {
+    margin-top    : 0;
+    margin-bottom : 10px;
+    font-size     : 14px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.71;
+    letter-spacing: normal;
+    text-align    : left;
+
+    @media (min-width: @desktop-width) {
+        margin-bottom : 30px;
+        font-size     : 18px;
+        font-weight   : normal;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.67;
+        letter-spacing: normal;
+        text-align    : left;
+
+    }
+}
+
+.hours__research-link-text {
+    margin: 0;
+}
+
+.hours__research-link {
+    color: pink;
+
+    &:hover {
+        text-decoration: none;
     }
 }
