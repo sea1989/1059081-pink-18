@@ -3,7 +3,21 @@
   width     : 320px;
   min-height: 51px;
   margin    : 0 auto;
+  
 }
+
+.main-nav::before {
+  content            : "";
+  position           : absolute;
+  left               : 10px;
+  top                : 10px;
+  width              : 258px;
+  height             : 286px;
+  background-image   : url("../img/logo-pink-white-mobile.svg");
+  background-repeat  : no-repeat;
+  background-position: 0 0;
+}
+
 
 .main-nav__toggle {
   position: absolute;
@@ -15,7 +29,7 @@
   width  : 70px;
   height : 50px;
 
-  background-color: #191d46;
+  background-color: transparent;
   cursor: pointer;
   border: none;
   &:hover,
@@ -25,6 +39,7 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
+  
   content: "";
   position: absolute;
   top     : 15px;
@@ -90,6 +105,10 @@
 }
 
 @media (max-width: @mobile-width-only) {
+
+
+
+
   .main-nav--closed .site-list__item {
     display: none;
   }
@@ -114,6 +133,18 @@
     margin: 0 auto;
   }
 
+  .main-nav::before {
+    content            : "";
+    position           : absolute;
+    left               : 15px;
+    top                : 35px;
+    width              : 258px;
+    height             : 286px;
+    background-image   : url("../img/logo-pink-white-tablet.svg");
+    background-repeat  : no-repeat;
+    background-position: 0 0;
+  }
+
   .main-nav__list {
     margin    : 0;
     padding   : 0;
@@ -124,9 +155,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav {
     width : 960px;
     margin: 0 auto;
+  }
+
+  .main-nav::before {
+    content            : "";
+    position           : absolute;
+    left               : 15px;
+    top                : 35px;
+    width              : 258px;
+    height             : 286px;
+    background-image   : url("../img/logo-pink-white-desktop.svg");
+    background-repeat  : no-repeat;
+    background-position: 0 0;
   }
 
   .main-nav__wrapper {

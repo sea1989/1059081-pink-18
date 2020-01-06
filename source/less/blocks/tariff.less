@@ -1,16 +1,38 @@
 .tariff {
+ position: relative;
+    background-color: #f2f2f2;
+    padding-top: 80px;
+    margin: 0 auto;  
+}
+
+.tariff::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: @bg-grey-lite url(../img/bg-triangle-white.svg) no-repeat center top;
+
+}
+
+
+.tariff__wrapper {
     width         : 320px;
     margin        : 0 auto;
     overflow: hidden;
+    text-align: center;
     /* Временно для сетки */
-
+background-color: #f2f2f2;
 
 }
 
 .tariff__list {
-    position: relative;
-    left: -525px;
+    padding-top: 25px;
+    padding-bottom: 65px;
+position: relative;
     width: 1104px;  
+left: -530px;
     background-color: #f2f2f2;
 }
 .tariff__title {
@@ -59,14 +81,15 @@
 
 
 @media (min-width: @tablet-width) {
-.tariff {
-        width         : 660px;
+.tariff__wrapper {
+        width         : auto;
         margin        : 0 auto;
         background-color: #f2f2f2;
        }
 
 .tariff__list {
-        position: static;
+    left: 0px;
+      text-align: center;
       width: 616px;
       margin        : 0 auto;
         background-color: #f2f2f2;
@@ -93,13 +116,17 @@ display: none;
 
 @media (min-width: @desktop-width) {
     .tariff {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+    .tariff__wrapper {
             width         : auto;
             margin        : 0 auto;
             background-color: #f2f2f2;
            }
     
     .tariff__list {
-            position: static;
+       
           width: 940px;
           margin        : 0 auto;
             background-color: #f2f2f2;

@@ -4,10 +4,10 @@
     display         : flex;
     flex-direction  : column;
     background-color: #ffffff;
-    background-size : 100vw;
+
     /* Временно для сетки */
     min-height: 1002px;
-   
+
 }
 
 .advantages__list::after {
@@ -16,7 +16,7 @@
     left               : 80px;
     top                : 430px;
     width              : 157px;
-    height             : 320px;
+    height             : 280px;
     background-image   : url("../img/iphone-screen-mobile@1x.png");
     background-repeat  : no-repeat;
     background-position: 0 0;
@@ -42,7 +42,7 @@
     padding-top: 40px;
     /* Временно для сетки */
     min-height: 80px;
-    outline   : 2px solid blueviolet;
+
 }
 
 .advantages__subtext {
@@ -58,7 +58,7 @@
     padding-top   : 30px;
     /* Временно для сетки */
     min-height: 80px;
-    outline   : 2px solid blueviolet;
+
 }
 
 .advantages__list {
@@ -66,7 +66,9 @@
     width     : 320px;
     margin    : 0 auto;
     padding   : 0px;
-    margin-top: 100px;
+    margin-top: 30px;
+    text-align: center;
+
 
 }
 
@@ -77,7 +79,7 @@
     margin-bottom: 30px;
     /* Временно для сетки */
 
-    outline: 3px solid brown;
+
 }
 
 .advantages__title {
@@ -102,9 +104,29 @@
 
 }
 
+.advantages__wrapperlist {
+    position        : relative;
+    background-color: #f2f2f2;
+    padding-top     : 80px;
+    margin          : 0 auto;
 
+}
+
+.advantages__wrapperlist::before {
+    content: "";
+
+    position  : absolute;
+    top       : 0;
+    width     : 100%;
+    height    : 100%;
+    background: @bg-grey-lite url(../img/bg-triangle-white.svg) no-repeat center top;
+}
 
 @media (min-width: @tablet-width) {
+    .advantages__wrapperlist {
+        padding-bottom: 5px;
+    }
+
     .advantages {
 
         margin: 0 auto;
@@ -128,6 +150,7 @@
         background-color: #ffffff;
         width           : 660px;
         margin          : 0 auto;
+        margin-bottom: 20px;
     }
 
     .advantages__text {
@@ -142,9 +165,7 @@
         margin        : 0;
         padding-top   : 50px;
         padding-bottom: 0px;
-        /* Временно для сетки */
 
-        outline: 2px solid blueviolet;
     }
 
     .advantages__subtext {
@@ -160,14 +181,10 @@
         padding-top   : 0px;
         padding-left  : 60px;
         padding-right : 60px;
-
-        /* Временно для сетки */
-
-        outline: 2px solid blueviolet;
     }
 
     .advantages__list {
-        margin-top: 120px;
+        margin-top: 0px;
     }
 
     .advantages__item {
@@ -201,11 +218,15 @@
 }
 
 @media (min-width: @desktop-width) {
+
+    .advantages__wrapperlist {
+        padding-top     : 0px;
+    }
+
     .advantages {
 
         margin: 0 auto;
-        /* Временно для сетки */
-        min-height: 932px;
+
     }
 
 
@@ -242,7 +263,6 @@
         padding-top   : 70px;
         /* Временно для сетки */
         min-height: 80px;
-        outline   : 2px solid blueviolet;
     }
 
     .advantages__subtext {
@@ -260,15 +280,14 @@
         padding-right : 150px;
         /* Временно для сетки */
         min-height: 80px;
-        outline   : 2px solid blueviolet;
+
     }
 
     .advantages__list {
         width  : 960px;
         display: flex;
         margin : 0 auto;
-        outline: 2px solid orangered;
-
+        padding-bottom: 20px;
     }
 
     .advantages__item {
@@ -280,8 +299,8 @@
     .advantages__title {
         font-size  : 34px;
         font-weight: bold;
-        line-height   : 0.7;
-        margin-top: 60px;
+        line-height: 0.7;
+        margin-top : 60px;
     }
 
     .advantages__description {
@@ -293,9 +312,9 @@
         line-height   : 1.67;
         letter-spacing: normal;
         text-align    : center;
-        margin: 0px;
-        padding: 0px;
-        margin-top: 30px;
+        margin        : 0px;
+        padding       : 0px;
+        margin-top    : 30px;
     }
 
 
