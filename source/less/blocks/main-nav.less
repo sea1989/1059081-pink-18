@@ -1,15 +1,15 @@
 .main-nav {
-  position: relative;
+  position  : relative;
   width     : 320px;
   min-height: 51px;
   margin    : 0 auto;
-  
+
 }
 
 .main-nav::before {
   content            : "";
   position           : absolute;
-  left               : 10px;
+  left               : 20px;
   top                : 10px;
   width              : 258px;
   height             : 286px;
@@ -30,8 +30,9 @@
   height : 50px;
 
   background-color: transparent;
-  cursor: pointer;
-  border: none;
+  cursor          : pointer;
+  border          : none;
+
   &:hover,
   &:active {
     background-color: #1d1d1c;
@@ -39,13 +40,13 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  
-  content: "";
-  position: absolute;
-  top     : 15px;
-  left    : 17px;
-  width : 36px;
-  height: 2px;
+
+  content         : "";
+  position        : absolute;
+  top             : 15px;
+  left            : 17px;
+  width           : 36px;
+  height          : 2px;
   background-color: #ffffff;
   box-shadow      : 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
@@ -92,18 +93,6 @@
   list-style: none;
 }
 
-.main-nav__item a {
-  font-family   : OpenSans;
-  font-size     : 18px;
-  font-weight   : bold;
-  font-stretch  : normal;
-  font-style    : normal;
-  line-height   : 1.78;
-  letter-spacing: normal;
-  text-align    : center;
-  color         : #ffffff;
-}
-
 @media (max-width: @mobile-width-only) {
 
 
@@ -129,6 +118,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+
     width : 660px;
     margin: 0 auto;
   }
