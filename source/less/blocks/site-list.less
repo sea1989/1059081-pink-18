@@ -8,34 +8,43 @@
     }
 
     .site-list a {
-      display       : block;
-      padding       : 12px 21px;
-      padding-bottom: 13px;
-      font-size     : 18px;
-      font-weight   : bold;
-      font-stretch  : normal;
-      font-style    : normal;
-      line-height   : 1.78;
-      letter-spacing: normal;
-      text-align: center;
+      display         : block;
+      padding         : 12px 21px;
+      padding-bottom  : 13px;
+      font-size       : 18px;
+      font-weight     : bold;
+      font-stretch    : normal;
+      font-style      : normal;
+      line-height     : 1.78;
+      letter-spacing  : normal;
+      text-align      : center;
       background-color: #283645;
-      border-bottom: 1px solid #010101;
-      border-top: 1px solid #485461;
-      color         : #ffffff;
-      text-transform : uppercase;
-      text-decoration: none;
+      border-bottom   : 1px solid #010101;
+      border-top      : 1px solid #485461;
+      color           : #ffffff;
+      text-transform  : uppercase;
+      text-decoration : none;
     }
 
     .site-list a[href] {
       &:hover {
-        background-color: @bg-grey;
-        border-top-color: @bg-grey;
+        color: @pink;
       }
 
       &:active {
-        color           : rgba(255, 255, 255, 0.3);
-        background-color: @bg-grey;
-        border-top-color: @bg-grey;
+        color   : rgba(255, 255, 255, 0.3);
+        position: relative;
+
+        &::after {
+          content   : "";
+          position  : absolute;
+          right     : 0;
+          bottom    : -2px;
+          left      : 0;
+          height    : 2px;
+          background: white;
+        }
+
       }
     }
 
@@ -50,10 +59,10 @@
     @media (min-width: @desktop-width) {
       .site-list {
         display        : flex;
-     justify-content: flex-end;
+        justify-content: space-between;
         width          : 960px;
         height         : 110px;
-        outline: blue solid 2px;
+        padding-left   : 260px;
       }
 
       .site-list a {
@@ -68,7 +77,5 @@
         background-color: transparent;
         padding-top     : 48px;
         padding-bottom  : 48px;
-
-        outline: red solid 2px;
       }
     }
