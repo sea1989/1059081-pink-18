@@ -1,32 +1,30 @@
 .no-outline() {
   outline   : none;
   background: transparent;
+
   &::before {
     display: none;
   }
 }
 
 .container() {
-  width: 320px;
-  padding-left: 20px;
+  width        : 320px;
+  padding-left : 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  margin       : 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 660px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width        : 960px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left : 10px;
   }
 }
 
-
 .container-phones() {
-  width: 320px;
-
+  width : 320px;
   margin: 0 auto;
 }
-

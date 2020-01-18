@@ -1,13 +1,10 @@
 .page-header {
 
   background-color: rgba(black, 0.3);
-  color           : white;
+  color           : @bg-white;
   width           : 100%;
 
 }
-
-
-
 
 @media (min-width: @tablet-width) {}
 
@@ -21,8 +18,7 @@
 
 .page-header__bg-photo {
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-
+  background-image   : url("../img/bg-back-mobile@1x.jpg");
   background-repeat  : no-repeat;
   background-position: center top;
 
@@ -31,7 +27,6 @@
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size : 700px auto;
   }
-
 
   @media (min-width: @tablet-width) {
     background-image : url("../img/bg-back-tablet@1x.jpg");

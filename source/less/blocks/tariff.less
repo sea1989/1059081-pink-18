@@ -1,13 +1,12 @@
 .tariff {
     position        : relative;
-    background-color: #f2f2f2;
+    background-color: @bg-grey-lite;
     padding-top     : 80px;
     margin          : 0 auto;
 }
 
 .tariff::before {
-    content: "";
-
+    content            : "";
     position           : absolute;
     top                : 0px;
     width              : 100%;
@@ -17,15 +16,12 @@
     background-position: 50% 0;
 }
 
-
 .tariff__wrapper {
     width     : 320px;
     margin    : 0 auto;
     overflow  : hidden;
     text-align: center;
-    /* Временно для сетки */
-    background-color: #f2f2f2;
-
+    background-color: @bg-grey-lite;
 }
 
 .tariff__list {
@@ -34,11 +30,11 @@
     position        : relative;
     width           : 1104px;
     left            : -530px;
-    background-color: #f2f2f2;
+    background-color: @bg-grey-lite;
 }
 
 .tariff__title {
-    color           : #ffffff;
+    color           : @bg-white;
     font-size       : 16px;
     background-color: @bg-grey;
     margin          : 0px;
@@ -46,7 +42,7 @@
 }
 
 .tariff__price {
-    color           : #ffffff;
+    color           : @bg-white;
     font-size       : 16px;
     background-color: @bg-grey;
     margin          : 0px;
@@ -60,7 +56,7 @@
 }
 
 .tariff__cell {
-    background-color: #ffffff;
+    background-color: @bg-white;
     width           : 276px;
     height          : 59px;
 }
@@ -74,13 +70,11 @@
 .tariff__cell--smile {
     font-size    : 14px;
     padding-right: 126px;
-
 }
 
 .tariff__cell--comments {
     font-size    : 14px;
     padding-right: 100px;
-
 }
 
 
@@ -88,7 +82,7 @@
     .tariff__wrapper {
         width           : auto;
         margin          : 0 auto;
-        background-color: #f2f2f2;
+        background-color: @bg-grey-lite;
     }
 
     .tariff__list {
@@ -96,7 +90,7 @@
         text-align      : center;
         width           : 616px;
         margin          : 0 auto;
-        background-color: #f2f2f2;
+        background-color: @bg-grey-lite;
     }
 
     .tariff__field {
@@ -106,7 +100,7 @@
     }
 
     .tariff__cell {
-        background-color: #ffffff;
+        background-color: @bg-white;
         width           : 153px;
         height          : 45px;
         font-size       : 14px;
@@ -127,14 +121,14 @@
     .tariff__wrapper {
         width           : auto;
         margin          : 0 auto;
-        background-color: #f2f2f2;
+        background-color: @bg-grey-lite;
     }
 
     .tariff__list {
 
         width           : 940px;
         margin          : 0 auto;
-        background-color: #f2f2f2;
+        background-color: @bg-grey-lite;
     }
 
     .tariff__field {
@@ -144,11 +138,10 @@
     }
 
     .tariff__cell {
-        background-color: #ffffff;
+        background-color: @bg-white;
         width           : 233px;
         height          : 59px;
         font-size       : 14px;
-
     }
 
     .tariff__cell span {
