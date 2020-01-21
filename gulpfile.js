@@ -83,7 +83,7 @@ gulp.task("webp", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/" 
+    server: "build/"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
@@ -94,7 +94,7 @@ gulp.task("server", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
-}); 
+});
 
 gulp.task("build", gulp.series(
   "clean",
